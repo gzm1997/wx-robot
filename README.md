@@ -6,7 +6,9 @@
 
 ###效果图
 
+![demo1][2]
 
+![demo2][3]
 
 ------
 ### 使用方法（前提是设备安装了python）：
@@ -17,8 +19,8 @@
 
 ## 核心
 
- - [python itchat模块][2]
- - [图灵机器人web api][3]
+ - [python itchat模块][4]
+ - [图灵机器人web api][5]
 
 ------
 
@@ -26,9 +28,9 @@
 
 在本项目中使用的是我的图灵机器人apikey,这个机器人的名字是火腿，谨纪念最后一条我亲手养大的狗仔。他的爸爸是我，妈妈是安妮海瑟薇。
 
-你可以获取自己的图灵机器人apikey，[注册图灵机器人账号][4]，创建机器人，在机器人详情中你会看到你的专属apikey:
+你可以获取自己的图灵机器人apikey，[注册图灵机器人账号][6]，创建机器人，在机器人详情中你会看到你的专属apikey:
 
-![apikey][5]
+![apikey][7]
 
 复制你的apikey,打开下载到本地我的github项目wx-robot，打开tuling.py文件，把下面的key的值，即7c1ccc2786df4e1685dda9f7a98c4ec9改为你自己的apikey即可。
 ```
@@ -40,7 +42,7 @@ data = {0
 ```
 可以登陆自己的图灵机器人账号，在我的机器人那里设置自己机器人的身份以及父母等等，挺好玩的，如下：
 
-![setRotbot][6]
+![setRotbot][8]
 
 ------
 
@@ -48,9 +50,9 @@ data = {0
  
 本项目只有两个关键文件：
 
- 1. wx.py
+ 1. wx.py（负责微信登陆与响应）
 
-![源自wx.py][7]
+![源自wx.py][9]
 
 ```
 #itchat装饰器
@@ -69,16 +71,18 @@ itchat.auto_login(enableCmdQR=True)
 #运行itchat
 itchat.run()
 ```
- 2. tuling.py
+ 2. tuling.py（负责发送信息给图灵机器人api，并获取机器人的回复）
 
-![源自tuling.py][8]
+![源自tuling.py][10]
 
 
   [1]: https://github.com/15331094/wx-robot
-  [2]: https://itchat.readthedocs.io/zh/latest/
-  [3]: http://www.tuling123.com/help/h_cent_webapi.jhtml?nav=doc
-  [4]: http://www.tuling123.com/
-  [5]: https://github.com/15331094/wx-robot/blob/master/screenshots/apikey.png?raw=true
-  [6]: https://github.com/15331094/wx-robot/blob/master/screenshots/setRobot.png?raw=true
-  [7]: https://github.com/15331094/wx-robot/blob/master/screenshots/wx.png?raw=true
-  [8]: https://github.com/15331094/wx-robot/blob/master/screenshots/tuling.png?raw=true
+  [2]: https://github.com/15331094/wx-robot/blob/master/screenshots/demo1.png?raw=true
+  [3]: https://github.com/15331094/wx-robot/blob/master/screenshots/demo2.png?raw=true
+  [4]: https://itchat.readthedocs.io/zh/latest/
+  [5]: http://www.tuling123.com/help/h_cent_webapi.jhtml?nav=doc
+  [6]: http://www.tuling123.com/
+  [7]: https://github.com/15331094/wx-robot/blob/master/screenshots/apikey.png?raw=true
+  [8]: https://github.com/15331094/wx-robot/blob/master/screenshots/setRobot.png?raw=true
+  [9]: https://github.com/15331094/wx-robot/blob/master/screenshots/wx.png?raw=true
+  [10]: https://github.com/15331094/wx-robot/blob/master/screenshots/tuling.png?raw=true

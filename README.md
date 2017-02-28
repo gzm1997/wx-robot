@@ -18,6 +18,7 @@
 本项目只有两个关键文件：
 
  1. wx.py
+
 ![源自wx.py][4]
 
 ```
@@ -38,6 +39,7 @@ itchat.auto_login(enableCmdQR=True)
 itchat.run()
 ```
  2. tuling.py
+
 ![源自tuling.py][5]
 
 
